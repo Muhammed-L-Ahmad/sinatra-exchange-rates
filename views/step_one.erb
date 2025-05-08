@@ -3,9 +3,9 @@
 <p>Go <a href="/">back</a>.</p>
 
 <ul>
-  <% currencies.keys.each |symbol| %>
+  <% @currencies.keys.each |symbol| %>
     <li>
-      <a href="/<%= @the_symbol %>/<%= symbol %>"></a>Convert 1<%= @the_symbol %> to <%= symbol %>...</a>
+      <a href="/<%= @the_symbol %>/<%= symbol %>">Convert 1<%= @the_symbol %> to <%= symbol %>...</a>
     </li>
   <% end %>
 </ul>
