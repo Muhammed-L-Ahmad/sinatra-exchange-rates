@@ -1,13 +1,9 @@
+<h1>Currency pairs</h1>
+<h1>Convert [AED]</h1>
 <ul>
-
-<% @currencies.keys.each do |symbol| %>
-
-
-<li>
-<a href="/<%= symbol %>">Convert 1 <%= symbol %>...</a>
-</li>
-
-
-<% end %>
-
+  <% @currencies.keys.each do |symbol| %>
+    <li>
+      <a href="/<%= symbol %>">Convert 1 <%= symbol %>...</a>
+    </li>
+  <% end %>
 </ul>
